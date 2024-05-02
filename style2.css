@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2D5C4; /* Cambia el color de fondo según tus preferencias */
+}
+
+.container_platos {
+    display: flex;
+    flex-wrap:wrap   ;
+    justify-content: center;
+    margin-top: 20px;
+}
+#container_platos > .platos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+#container_platos > .platos > div:nth-child(1) {
+    width: 50%;
+
+}
+
+.platos {
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 100%; /* Ancho de las tarjetas */
+    text-align: center;
+    transition: transform 0.3s ease; /* Añadir efecto de transición */
+}
+.platos:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.platos img {
+    width: 100%; /* Ajustar el ancho de la imagen al 100% del contenedor */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#detalles_plato {
+    top: 100%;
+    left: 0;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir sombra a los detalles */
+}
+
+#detalles_plato p {
+    margin: 5px 0;
+}
+#detalles_plato > p:nth-child(1), #detalles_plato > p:nth-child(3), #detalles_plato > p:nth-child(5) {
+    font-weight: bold;
+}
+
+
+#btn_home{
+    margin: 0px 30px;
+    background: transparent;
+    border: none;
+    transition: transform 0.5s; 
+}
+
+#btn_home:hover{
+    transform: scale(0.5);
+}
+
+#p_icono{
+    font-size: 40px;
+}
+

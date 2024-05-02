@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Imagen_fondo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.695); /* Fondo semi-transparente */
+}
+
+.container3 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Lakki Reddy", serif; 
+    color: navy;
+    font-size: 60px;
+    font-style: normal;
+    display: block;
+    font-weight: lighter;
+    -webkit-text-stroke: 1px white;
+    background-color: rgba(245, 245, 220, 0.605);
+    padding: 10px; /* Añadido para mayor separación */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container_platos_galeria {
+    max-width: 800px; /* Ajustar el ancho de la galería */
+    margin: 20px auto; /* Ajustar el margen */
+    display: flex;
+    flex-wrap: wrap; /* Añadir esta propiedad para que las tarjetas se envuelvan */
+    justify-content: center; /* Centrar las tarjetas */
+}
+
+.platos {
+    color: #e32020;
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: calc(33.33% - 20px); /* Ajustar el ancho de las tarjetas */
+    text-align: center;
+    transition: transform 0.3s ease; /* Añadir efecto de transición */
+}
+
+.platos:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+}
